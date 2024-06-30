@@ -43,7 +43,8 @@ function MainPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:3001/completions", options);
+      const response = await fetch("https://ai-blog-poster-c7e338ae6c86.herokuapp.com/completions", options);
+      // const response = await fetch("http://localhost:3001/completions", options);
       const data = await response.json();
       setArticle(data.choices[0].message);
       setIsLoading(false);
