@@ -1,12 +1,12 @@
 # BlogPostWriter
 
-CoverLetterGenerator is a web application that helps users generate professional cover letters based on their input. The app is built using React for the frontend and Express for the backend.
+BlogPostWriter is a web application that helps users generate professional blog posts based on their input. The app is built using React for the frontend and Express for the backend.
 
 ## Features
 
-- User-friendly interface to input job position, company name, skills, company values, and job listing.
+- User-friendly interface to input important information to create an article.
 - Generates a concise and professional cover letter using OpenAI's GPT-3.5 API.
-- Option to copy the generated cover letter to the clipboard for easy use.
+- Option to copy the generated blog post to the clipboard for easy use.
 
 ## Getting Started
 
@@ -48,8 +48,8 @@ Ensure you have the following installed on your machine:
 2. ** Change the handleGenerateCoverLetter function to call Local Host**
    In the MainPage.jsx, comment out line 44 and uncomment line 45; So that we are calling localhost instead of the deployed application.
     ```sh
-       //  "https://cover-letter-generator-ai-b7323a56ca78.herokuapp.com/completions",  options );
-       "http://localhost:3001/completions",  options );
+        //  "https://cover-letter-generator-ai-b7323a56ca78.herokuapp.com/completions",  options );
+        "http://localhost:3001/completions",  options );
     ```
    
 2. **Start the frontend (React) server:**
@@ -70,9 +70,9 @@ Ensure you have the following installed on your machine:
 
 Once both servers are running, open your browser and navigate to `http://localhost:3000`. Follow these steps to generate a cover letter:
 
-1. Fill in the prompts with your job position, company name, relevant skills, company values, and the job listing.
-2. Click on the "Generate Cover Letter" button.
-3. The generated cover letter will appear below the form. You can then copy it to the clipboard for use in your job application.
+1. Fill in the prompts with your desired article information.
+2. Click on the "Generate Blog Post" button.
+3. The generated blog post will appear below the form. You can then copy it to the clipboard for use in your blog.
 
 ### Deployment
 
